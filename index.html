@@ -1,31 +1,120 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
   <head>
-
     <meta charset="UTF-8" />
 
-    <title>Hello, world!</title>
+    <title>Odin Signup</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <meta name="description" content="" />
 
-    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <link rel="icon" href="favicon.png">
-
+    <link rel="icon" href="favicon.png" />
   </head>
 
   <body>
-
-    <h1>Hello, world!</h1>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-
+    <main>
+      <section>
+        <div class="img">
+          <div class="img-shadow">
+            <img src="./images/odin-lined.png" />
+            <span>Odin</span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="description">
+            <p>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              Sign up now to get started.
+              <br />
+              <br />
+              <span class="bold-desc">You know you want to.</span>
+            </p>
+          </div>
+          <div class="signup">
+            <h1>Let's do this!</h1>
+            <form>
+              <div>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder=" "
+                  required
+                />
+                <label for="fname">First Name</label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder=" "
+                  required
+                />
+                <label for="lname">Last Name</label>
+              </div>
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder=" "
+                  required
+                />
+                <label for="email">Email Address</label>
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  maxlength="15"
+                  pattern="\+(\d{1,4}|\(\d{1,4}\))(\d{1,4}|\(\d{1,4}\))?[\d\s\.-]{5,}"
+                  placeholder=" "
+                  required
+                />
+                <label for="phone">Phone Number</label>
+              </div>
+              <div>
+                <input
+                  type="password"
+                  id="pword"
+                  name="pword"
+                  placeholder=" "
+                  required
+                />
+                <label for="pword">Password</label>
+              </div>
+              <div>
+                <input
+                  type="password"
+                  id="confirm"
+                  name="confirm"
+                  placeholder=" "
+                  required
+                />
+                <label for="confirm">Confirm Password</label>
+              </div>
+            </form>
+          </div>
+          <div class="button">
+            <div>
+              <button>Create Account</button>
+            </div>
+            <span>Already have an account? <a href="">Log In</a></span>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
-
 </html>
